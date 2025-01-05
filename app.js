@@ -1,7 +1,7 @@
 import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf';
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.min.js';
 
-pdfjsLib.getDocument('/我.pdf').promise.then(doc => {
+pdfjsLib.getDocument('./我.pdf').promise.then(doc => {
     doc.getPage(1).then(page => {
         let viewport = page.getViewport({ scale: 1.5 });
         let canvas = document.createElement('canvas');
