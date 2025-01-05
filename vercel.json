@@ -3,7 +3,7 @@
       { "source": "/", "destination": "/index.html" }
     ],
     "routes": [
-    { "src": "/me.pdf", "dest": "/me.pdf" }
+    { "src": "/(.*)", "dest": "/$1" }
   ]
   }
   
